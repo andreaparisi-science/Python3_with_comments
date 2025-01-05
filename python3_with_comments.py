@@ -39,7 +39,6 @@ if filename != "":
 				lines[idx] = ""
 
 	exec_cmd = ["python3"] + python_params + ["-"] + script_params
-	print(exec_cmd)
 	subprocess.run(exec_cmd, 
 			input=('\n'.join(lines)).encode('utf-8'))
 else:

@@ -79,7 +79,7 @@ Then reload the aliases:
 
 	source ~/.bashrc
 
-And you should be done.
+And you should be set.
 
 
 If you are using Windows, I am not sure what you should do as I assume you are not using a command line to run python scripts.  If you are using the command line, then you should know what to do.  If you do not, well... good luck... I do not use Windows for development with python.  If you find out and want to help other users, please let me know so that I can add instructions here.

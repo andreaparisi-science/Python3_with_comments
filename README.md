@@ -7,7 +7,7 @@ Start of multiline comment: #[
 
 End of multiline comment: #]  
 
-This will allow the script to be run normally even when directly using the standard python interpreter
+It will allow the script to be run normally even when directly using the standard python interpreter
 
 
 

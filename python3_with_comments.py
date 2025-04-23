@@ -8,7 +8,7 @@ filename = ""
 python_params = []
 script_params = []
 for arg in sys.argv:
-	if arg[-24:] == "python3_with_comments.py":
+	if arg == "python3_with_comments.py":
 		continue
 	elif filename == "" and arg[0] == "-":
 		python_params.append(arg)
@@ -40,7 +40,8 @@ if filename != "":
 
 	exec_cmd = ["python3"] + python_params + ["-"] + script_params
 	subprocess.run(exec_cmd, 
-			input=('\n'.join(lines)).encode('utf-8'))
+			input=(''.join(lines)).encode('utf-8'))
 else:
-	subprocess.run("python3")
+	exec_cmd = ["python3"] + python_params
+	subprocess.run(exec_cmd)
 
